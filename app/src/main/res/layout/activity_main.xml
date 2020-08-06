@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="100dp"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <!--<TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the app"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toStartOf="@+id/nav_host_fragment"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/nav_host_fragment"
+            android:layout_marginBottom="20dp"
+            tools:layout_editor_absoluteY="128dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap on the screen to increment counter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toStartOf="@+id/nav_host_fragment"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toEndOf="@+id/nav_host_fragment"
+            tools:layout_editor_absoluteY="335dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            />-->
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textSize="200dp"
+            app:layout_constraintHorizontal_bias="0.49" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:text="-1"
+                android:background="#99FF9800"
+                android:textSize="40dp"
+                android:textColor="#C4404040"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <Button
+                android:id="@+id/btnReset"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_weight = "0.5"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:text="RESET"
+                android:background="#99FF9800"
+                android:textSize="40dp"
+                android:textColor="#C4404040"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
